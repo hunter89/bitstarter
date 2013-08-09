@@ -19,6 +19,7 @@
       @media (min-width: 980px) { 
         body {
          padding-top: 60px;
+         
         }
        .linediv-l {
          border-right: 1px white solid;
@@ -47,7 +48,7 @@
       body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
-      .heading, .subheading {
+      .heading , .subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
       }
@@ -98,6 +99,10 @@
       .footer a {
         color: #ccccff;
       }
+      .brand{
+        text-align: center;
+      }
+     
       /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
       div.addthis_toolbox {
       width:180px;
@@ -124,20 +129,15 @@
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar"
+        <div class="span12 container">
+	  <button type="button" class="btn btn-navbar"
                   data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Bitstarter</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+
+          <a class="span12 brand" href="#">Bitstarter</a>       
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -159,91 +159,36 @@
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">If you have a product or hope of building a nice one someday, well go ahead READ ON!</p>
+          <p class="lead">Feedback engine for new products.</p>
         </div>
       </div>
       <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
+        <div class="span6 offset3 video">
+          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/550x400">
         </div>
-
-        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
-          <div class="row-fluid">
-          <div class="span8 offset2">
-            <div class="row-fluid statistics">
-              <div class="span4">
-                <!-- linediv-l and linediv-r give dividing lines that look
-                different in horizontal and vertical layouts, illustrating
-                media queries. -->
-                <div class="linediv-l">
-                <h3>1000</h3> <p>backers</p>
-                </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $10,000</p>
-                </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-r">
-                <h3>10</h3> <p>days left</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row-fluid">
-          <div class="span10 offset1">
-            <!-- Bootstrap progress bar -->
-            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-            <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
-            </div>
-          </div>
-          </div>
-          <div class="row-fluid">
-          <div class="span8 offset3 order">
-            <a class="coinbase-button" data-button-style="custom_large" data-button-text="Donate Bitcoins" data-code="10fda9ce1ae7c437fb9eae96d6ec00ee" data-button-style="custom_large" href="https://coinbase.com/checkouts/10fda9ce1ae7c437fb9eae96d6ec00ee">Donate Bitcoins</a>
-	    <script src="https://coinbase.com/assets/button.js" type="text/javascript">
-	    </script>
-          </div>
-          </div>
-          <div class="row-fluid">
-          <div class="span8 offset2 social">
-            <!-- AddThis Button BEGIN -->
-	    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-	      <a class="addthis_button_preferred_1"></a>
-	      <a class="addthis_button_preferred_2"></a>
-	      <a class="addthis_button_compact"></a>
-	      <a class="addthis_counter addthis_bubble_style"></a>
-	    </div>
-	    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-	    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fd9ac66210b056"></script>
-	    <!-- AddThis Button END -->
-          </div>
-          </div>
-        </div>
-        </div>
-      </div>
-
+     </div>   
+	
       <!-- Beyond this part the marketing copy begins. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid"  alt="Placeholder" src="http://placehold.it/480x300">
-        </div>
-        <div class="span5 copy">
+       
+        <div class="span12 copy">
           <p>
-           Flipped a coin. It's head. Congratulations, you are CEO of the NEXT BIG THING. You would surely wanna test this big thing of yours. If you are rich enough (read BIG enough) you will probably do a full-fledged market research by hiring experts and paying them huge sums of money. But it really doesn't make sense for hiring the biggies and spending loads on them if you intend to build a lean startup, especially if your startup intends to target individual consumers. You would be better-off by just asking your consumers how they feel about it. You would ask them their REVIEW. Here is where MYSERVICENAME comes in. We provide a very simple interface for you to interact with your consumers or potential customers. You setup a review form, if you want to pay the reviewer for their sevice you can do so too. Just set the limit, add your credit card with us and pay-up when the reviewer does his job. Here is the best part --- YOU DON'T PAY US A PENNY. If you opt for a paid service all your money goes to the one who reviewed the product (well almost all, payment processors will take their cut). Get the best possible service a startup can get, a customer feedback early on in the business and NOT PAY anything for it.   
+           </br></br></br></br></br></br> 
           </p>
         </div>
       </div>
 
       <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
+        
+        <div class="span8 offset3 asset">
+          <img class="img-polaroid"  alt="Placeholder" src="http://www.livewires.org.uk/assets/About/_resampled/resizedimage600360-lw2010-feedback-cloud.png">
+        </div>
+      </div>
+      <div class="row-fluid section3">
+	<div class="span5 offset1 copy copy-left">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
@@ -258,47 +203,108 @@
             nunc. Fusce nec egestas sem. Donec fringilla.
           </p>
         </div>
-        <div class="span5 asset">
+	<div class="span5 offset1 asset">
           <img class="img-polaroid"  alt="Placeholder" src="http://placehold.it/480x300">
         </div>
       </div>
-
-      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
-      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
-          <div class="span10 offset1">
-            <h3>FAQ</h3>
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
-                  </a>
-                </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Frequently Asked Question.
-                  </div>
+      <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+      <div class="span5 offset3 actions">
+        <div class="row-fluid">
+          <div class="span8 offset2">
+            <div class="row-fluid statistics">
+              <div class="span4">
+                <!-- linediv-l and linediv-r give dividing lines that look
+                     different in horizontal and vertical layouts, illustrating
+                     media queries. -->
+                <div class="linediv-l">
+                  <h3>1000</h3> <p>backers</p>
                 </div>
               </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
-                  </a>
+              <div class="span4">
+                <div class="linediv-c">
+                  <h3>$6000</h3> <p>of $10,000</p>
                 </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    A question which is commonly asked by users.
-                  </div>
+              </div>
+              <div class="span4">
+                <div class="linediv-r">
+                  <h3>10</h3> <p>days left</p>
                 </div>
               </div>
             </div>
           </div>
+          <div class="row-fluid">
+            <div class="span10 offset1">
+              <!-- Bootstrap progress bar -->
+              <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+              <div class="thermometer progress active">
+		<div class="bar bar-success" style="width: 60%;"></div>
+		<div class="bar bar-warning" style="width: 40%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span8 offset3 order">
+              <a class="coinbase-button" data-button-style="custom_large" data-button-text="Donate Bitcoins" data-code="10fda9ce1ae7c437fb9eae96d6ec00ee" data-button-style="custom_large" href="https://coinbase.com/checkouts/10fda9ce1ae7c437fb9eae96d6ec00ee">Donate Bitcoins</a>
+	      <script src="https://coinbase.com/assets/button.js" type="text/javascript">
+	      </script>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span8 offset2 social">
+              <!-- AddThis Button BEGIN -->
+	      <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+		<a class="addthis_button_preferred_1"></a>
+		<a class="addthis_button_preferred_2"></a>
+		<a class="addthis_button_compact"></a>
+		<a class="addthis_counter addthis_bubble_style"></a>
+	      </div>
+	      <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+	      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fd9ac66210b056"></script>
+	      <!-- AddThis Button END -->
+            </div>
+          </div>
+        </div>
+      </div>
+      
 
+
+      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
+      
+      <div class="row-fluid faq">
+        <div class="span10 offset1">
+          <h3>FAQ</h3>
+          <div class="accordion" id="accordion2">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseOne">
+                  What does FAQ stand for?
+                </a>
+              </div>
+              <div id="collapseOne" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  Frequently Asked Question.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseTwo">
+                  What's a Frequently Asked Question?
+                </a>
+              </div>
+              <div id="collapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  A question which is commonly asked by users.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+	
       </div>
 
       <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
